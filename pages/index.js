@@ -1,4 +1,3 @@
-// splatoon-site/pages/index.js
 export default function Home() {
   return (
     <main className="p-6">
@@ -8,14 +7,15 @@ export default function Home() {
       <div className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">🎥 最新の実況動画</h2>
         <div className="aspect-video">
-        <iframe width="560" height="315"
-src="https://www.youtube.com/watch?v=gxEbVB3o5ME"
-title="YouTube video player"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen>
-</iframe>
-
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/gxEbVB3o5ME"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </div>
       </div>
 
