@@ -1,0 +1,99 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.aspect-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.aspect-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* 1. ベースの body 設定 */
+body {
+  position: relative;
+  background-color: #000; /* 黒ベースで統一感 */
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. 背景画像を「薄く」全体に表示 */
+body::before {
+  content: "";
+  background-image: url('/images/bg.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.70; /* ★ 薄さを調整（0.05～0.15が目安） */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* 3. タイトルをスプラ風ピンクに */
+h1, h2, h3 {
+  color: #ff4dd2; /* ネオンピンク */
+  text-shadow: 0 0 5px #ff4dd2aa;
+}
+
+/* 4. 本文を白〜薄灰色に */
+p, li, div, span {
+  color: #ffffff; /* 薄いグレー（白に近い） */
+  line-height: 1.7;
+}
+
+/* 5. リンクもスプラ風カラーに */
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 6. 必要なら、全体のコンテンツに余白 */
+main {
+  padding: 1rem;
+}
+/* globals.css */
+.text-outline {
+  text-shadow:
+    -1px -1px 0 #ffffff,
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
+}
+
+.text-outline-pink {
+  text-shadow:
+    -1px -1px 0 #ff2bdc,
+     1px -1px 0 #ff2bdc,
+    -1px  1px 0 #ff2bdc,
+     1px  1px 0 #ff2bdc;
+}
+/* globals.css に追加（すでに prose-invert を使ってる場合） */
+.prose h1,
+.prose h2,
+.prose h3 {
+  color: #fff !important; /* タイトルをはっきり白に */
+  text-shadow: 0 0 5px #ff4dd2aa; /* ネオンぽい効果 */
+}
+
+.prose a {
+  color: #38bdf8 !important; /* リンクは水色系に */
+  text-decoration: underline;
+}
+.prose a:hover {
+  color: #fff338 !important; /* ホバーで黄色に変化 */
+}
