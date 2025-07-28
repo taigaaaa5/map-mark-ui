@@ -22,8 +22,13 @@ export default function AppPage() {
               <h2 className="text-xl font-semibold mb-1">マップマークアプリ</h2>
               <p className="text-sm leading-relaxed">
                 スプラトゥーン3のステージに「キル・デス・注意」マークを自由に配置できる分析アプリです。<br />
+                <span className="text-yellow-400 font-bold">※ Android専用アプリです（iPhoneでは動作しません）</span><br />
                 GitHubの
-                <a href="https://github.com/taigaaaa5/map-mark-ui/releases" target="_blank" className="text-blue-400 underline mx-1">
+                <a
+                  href="https://github.com/taigaaaa5/map-mark-ui/releases"
+                  target="_blank"
+                  className="text-blue-400 underline mx-1"
+                >
                   Releases
                 </a>
                 の「Assets」から <strong>map-mark-ui.apk</strong> をクリックしてダウンロードしてください。
@@ -40,8 +45,13 @@ export default function AppPage() {
               <h2 className="text-xl font-semibold mb-1">勝率カウントアプリ</h2>
               <p className="text-sm leading-relaxed">
                 各ステージ・ルールごとの勝利数・敗北数を記録し、勝率表示・保存ができるアプリです。<br />
+                <span className="text-yellow-400 font-bold">※ Android専用アプリです（iPhoneでは動作しません）</span><br />
                 GitHubの
-                <a href="https://github.com/taigaaaa5/splatoon-stats/releases" target="_blank" className="text-blue-400 underline mx-1">
+                <a
+                  href="https://github.com/taigaaaa5/splatoon-stats/releases"
+                  target="_blank"
+                  className="text-blue-400 underline mx-1"
+                >
                   Releases
                 </a>
                 の「Assets」から <strong>splatoon-stats.apk</strong> をクリックしてダウンロードしてください。
