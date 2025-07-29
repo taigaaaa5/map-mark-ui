@@ -31,7 +31,7 @@ export default function AppPage() {
                 >
                   Releases
                 </a>
-                の「Assets」から <strong>map-mark-ui.apk</strong> をクリックしてダウンロードしてください。
+                の「Assets」から <strong>map-mark-v1.0.1.apk</strong> をクリックしてダウンロードしてください。
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function AppPage() {
                 >
                   Releases
                 </a>
-                の「Assets」から <strong>splatoon-stats.apk</strong> をクリックしてダウンロードしてください。
+                の「Assets」から <strong>splatoon-stats-v1.0.1</strong> をクリックしてダウンロードしてください。
               </p>
             </div>
           </div>
