@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
 import { useState } from 'react';
-import Link from 'next/link';
+
 
 export async function getStaticProps() {
   const postsDirectory = path.join(process.cwd(), 'posts');
