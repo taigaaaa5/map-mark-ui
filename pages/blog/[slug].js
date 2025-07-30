@@ -29,15 +29,21 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       title: data.title || params.slug,
+      date: data.date || null, // ← ここを追加
       contentHtml,
     },
   };
 }
 
-export default function Post({ title, contentHtml }) {
+export default function Post({ title, date, contentHtml }) {
   return (
     <div className="prose mx-auto px-4">
       <h1>{title}</h1>
+      {date && (
+        <p className="text-gray-500 text-sm mb-4">
+          投稿日: {new Date(date).toLocaleDateString('ja-JP')}
+        </p>
+      )}
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </div>
   );
