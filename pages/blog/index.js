@@ -42,6 +42,12 @@ export default function BlogList({ posts, allTags }) {
 
   return (
     <div className="prose mx-auto px-4">
+    // コンポーネント内適当な場所に
+  <div className="mb-4">
+    <Link href="/" className="text-blue-600 hover:underline">
+      ← ホームに戻る
+    </Link>
+  </div>
       <h1>ブログ一覧</h1>
 
       {/* タグフィルタ */}
@@ -91,10 +97,5 @@ export default function BlogList({ posts, allTags }) {
       )}
     </div>
   );
-  // コンポーネント内適当な場所に
-<div className="mb-4">
-  <Link href="/" className="text-blue-600 hover:underline">
-    ← ホームに戻る
-  </Link>
-</div>
+
 }
