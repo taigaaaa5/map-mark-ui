@@ -54,7 +54,7 @@ export default function AppPage() {
                 >
                   Releases
                 </a>
-                の「Assets」から <strong>splatoon-stats-v1.0.5.apk</strong> をクリックしてダウンロードしてください。
+                の「Assets」から <strong>splatoon-stats-v1.0.7.apk</strong> をクリックしてダウンロードしてください。
               </p>
             </div>
           </div>
