@@ -8,6 +8,12 @@ export default function Home() {
       <Head>
         <title>スプラマップツール</title>
         <meta name="description" content="スプラトゥーン向けの便利ツール紹介サイト" />
+        <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="スプラマップツール" />
+  <meta property="og:description" content="スプラトゥーン3のマップ分析や勝率記録ができる便利ツールです。" />
+  <meta property="og:url" content="https://map-mark-ui-qs57.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/splatoon-stats.png" />
       </Head>
 
 
