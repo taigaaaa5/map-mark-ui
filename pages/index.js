@@ -35,7 +35,7 @@ export default function Home() {
               style={{ width: '100%', maxWidth: '448px', aspectRatio: '16 / 9', margin: '0 auto' }}
             >
               <iframe
-                src="https://www.youtube.com/embed/gxEbVB3o5ME"
+                src="https://www.youtube.com/embed/KUQWV53WXDA"
                 style={{ width: '100%', height: '100%', borderRadius: '0.5rem' }}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
